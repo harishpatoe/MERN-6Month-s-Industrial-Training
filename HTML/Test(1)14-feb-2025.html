@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        .first{
+            margin-top: 24px;
+            margin-right: 30px;
+            width: 15px;
+            height: 15px;
+            border: 2px solid whitesmoke;
+            border-radius: 10px;
+            background-color: rgb(153, 124, 56); 
+            animation: first 2s infinite;
+        }
+        @keyframes first {
+            0%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(20px,-20px);
+            }
+            50%{
+                transform: translate(40px,10px);
+            }
+            75%{
+                transform: translate(20px,20px);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }    
+        .second{
+            width: 15px;
+            height: 15px;
+            border: 2px solid whitesmoke;
+            border-radius: 10px;
+            background-color: rgb(153, 124, 56); 
+            animation: second 2s infinite;
+        }
+        @keyframes second{
+            0%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(-20px,-20px);
+            }
+            50%{
+                transform: translate(10px,-40px);
+            }
+            75%{
+                transform: translate(20px,-20px);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+        }
+        .third{
+            width: 15px;
+            height: 15px;
+            border: 2px solid whitesmoke;
+            border-radius: 10px;
+            background-color: rgb(153, 124, 56); 
+            animation: third 2s infinite;
+        }
+        @keyframes third {
+            0%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(20px,20px);
+            }
+            50%{
+                transform: translate(-10px,40px);
+            }
+            75%{
+                transform: translate(-20px,20px);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+        }
+        .fourth{
+            margin-top: 24px;
+            margin-left: 30px;
+            width: 15px;
+            height: 15px;
+            border: 2px solid whitesmoke;
+            border-radius: 10px;
+            background-color: rgb(153, 124, 56); 
+            animation: fourth 2s infinite;
+        }
+        @keyframes fourth{
+            0%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(-20px,20px);
+            }
+            50%{
+                transform: translate(-40px,-10px);
+            }
+            75%{
+                transform: translate(-20px,-20px);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <h1></h1>
+        </div>
+        <div class="main">
+            <div class="second">
+                <h1></h1>
+            </div>
+            <div class="third">
+                <h1></h1>
+            </div>
+        </div>
+        <div class="fourth">
+            <h1></h1>
+        </div>
+    </div>
+</body>
+</html>
