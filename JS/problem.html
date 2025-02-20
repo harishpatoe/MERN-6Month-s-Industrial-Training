@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // let group = [1,2,3,4,5]
+    // if(group.length == 5){
+    //     group.push(1)
+    //     console.log("Get offer",group)
+    // }
+    // else{
+    //     console.log("get lost",group)
+    // }
+
+    // let group1 = [1,2,3]
+    // let group2 = [4,5]
+    // const offer = group1.concat(group2)
+    // var a = offer.length
+    // if(a>=5){
+    //     offer.push(1)
+    //     console.log("yours welcome",offer)
+    // }
+    // else{
+    //     console.log("get lost",offer);
+    // }
+
+    const group1 = [1,2,3,4,5,6]
+    const group2 = [7,8,9,0]
+    let group = group1.concat(group2)
+    let sliced_group = group.splice(7,8)
+    console.log("left",group);
+    console.log("getlost",sliced_group);
+    
+</script>
+</html>
